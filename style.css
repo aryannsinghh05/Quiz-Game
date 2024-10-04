@@ -1,0 +1,99 @@
+body {
+  background-image: url('pic3.jpg'); 
+  background-size: cover; /* Ensures the image covers the entire area */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image */
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.container {
+  background-color: #5b0ece; /* White background for the quiz container */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(51, 47, 47, 0.2);
+  width: 350px; /* Increased width for better spacing */
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: scale(1.02); /* Slight scale effect on hover */
+}
+
+h1 {
+  color: #000000; /* Dark teal for heading */
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(182, 168, 168, 0.2);
+}
+
+.quiz-container {
+  margin: 20px 0;
+}
+
+.question {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #000000; /* Darker shade of teal */
+  margin-bottom: 15px;
+}
+
+.answer {
+  display: block;
+  margin: 10px 0;
+  padding: 12px;
+  background-color: #b2dfdb; /* Light teal background for answers */
+  border: 2px solid #00796b; /* Dark teal border */
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.answer:hover {
+  background-color: #6dee0a; /* Darker teal on hover */
+  color: white; /* White text on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.submit-button {
+  padding: 10px 20px;
+  background-color: #00796b; /* Dark teal for button */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.submit-button:hover {
+  background-color: #004d40; /* Darker shade on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.result {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #000000;
+  font-size: 1.2rem;
+  transition: opacity 0.5s ease;
+}
+
+.hidden {
+  display: none;
+}
