@@ -1,1 +1,2 @@
 # Quiz-Game
+This is an interactive quiz game built using HTML, CSS, and JavaScript. The game presents a series of multiple-choice questions to the player. The user selects an answer, and the game tracks the score based on correct responses. At the end of the quiz, the total score is displayed, allowing the player to review their performance. The front-end layout is styled with CSS for a clean and engaging user interface, while the logic for question handling, score calculation, and interaction is managed through JavaScript.
